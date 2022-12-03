@@ -150,7 +150,7 @@ function Success({ products }: Props) {
                 </button>
 
                 <p className="text-xl font-medium text-black">
-                  <Currency quantity={subtotal + 20} />
+                  <Currency quantity={subtotal} />
                 </p>
               </div>
             </div>
@@ -197,19 +197,13 @@ function Success({ products }: Props) {
                     <p className="text-[gray]">Discount</p>
                     <p className="text-[gray]"></p>
                   </div> */}
-                  <div className="flex justify-between text-sm">
-                    <p className="text-[gray]">Shipping</p>
-                    <p className="font-medium">
-                      <Currency quantity={20} currency="USD" />
-                    </p>
-                  </div>
                 </div>
                 <div className="flex justify-between pt-4">
                   <p>Total</p>
                   <p className="flex items-center gap-x-2 text-xs text-[gray]">
                     USD
                     <span className="text-xl font-medium text-black">
-                      <Currency quantity={subtotal + 20} />
+                      <Currency quantity={subtotal} />
                     </span>
                   </p>
                 </div>
