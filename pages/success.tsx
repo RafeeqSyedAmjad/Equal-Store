@@ -23,7 +23,6 @@ interface Props {
 }
 
 function Success({ products }: Props) {
-  console.log(products);
   const router = useRouter();
   const { session_id } = router.query;
   const [mounted, setMounted] = useState(false);
